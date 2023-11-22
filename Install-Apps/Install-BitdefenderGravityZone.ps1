@@ -40,10 +40,10 @@ $TempDirectory = "C:\Temp\BDGZ"
 $PowerShellVersion = $PSVersionTable.PSVersion
 #---Varilables [App Specific]
 $App = "Bitdefender GravityZone"
-$DownloadApp = "$SetupDownloader"
+$DownloadApp = "https://cloud.gravityzone.bitdefender.com/Packages/BSTWIN/0/$SetupDownloader"
 $TempFileName = "bdgz_temp.exe"
 $TempFilePath = Join-Path -Path $TempDirectory -ChildPath $TempFileName
-$RenamedFilePath = Join-Path -Path $TempDirectory -ChildPath InstallBD.exe
+$RenamedFilePath = Join-Path -Path $TempDirectory -ChildPath $SetupDownloader
 $ServiceName_BDGZ = "EPProtectedService"
 $ServiceName_S1 = "SentinelAgent"
 $Arg = "/bdparams /silent"
