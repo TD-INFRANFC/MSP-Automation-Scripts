@@ -44,7 +44,7 @@ $DownloadApp = "$SetupDownloader"
 $TempFileName = "bdgz_temp.exe"
 $TempFilePath = Join-Path -Path $TempDirectory -ChildPath $TempFileName
 $RenamedFilePath = Join-Path -Path $TempDirectory -ChildPath $SetupDownloader
-$ServiceName_BDGZ = “EPProtectedService”
+$ServiceName_BDGZ = "EPProtectedService"
 $ServiceName_S1 = "SentinelAgent"
 $Arg = "/bdparams /silent"
 
